@@ -16,7 +16,7 @@ public class HelloWorldController {
     }
 
     
-    @GetMapping(value="muck/(thisString)")
+    @GetMapping(value="muck/{thisString}")
     public String getAKnownPicture(@PathVariable String thisString){
         return "Many silly clowns look like " + thisString;
     }
